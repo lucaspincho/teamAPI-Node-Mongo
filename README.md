@@ -8,8 +8,8 @@ O objetivo desse projeto é fornecer uma estrutura completa para gerenciar uma l
 
 - **Criação (Create)**: permite adicionar novos times à lista.(Pendente - Versão 1.1)
 - **Leitura (Read)**: permite recuperar informações de times específicos e também  todos os jogos da lista.
-- **Atualização (Update)**: permite modificar informações existentes dos jogos na lista.(Pendente - Versão 1.1)
-- **Exclusão (Delete)**: permite remover jogos da lista.(Pendente - Versão 1.1)
+- **Atualização (Update)**: permite modificar informações existentes dos times na lista.(Pendente - Versão 1.1)
+- **Exclusão (Delete)**: permite remover times da lista.(Pendente - Versão 1.1)
 
 ## Requisitos
 
