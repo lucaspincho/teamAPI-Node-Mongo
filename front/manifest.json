@@ -1,0 +1,46 @@
+{
+  "background_color": "#ffffff",
+  "description": "A lista dos seus times prediletos.",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "MyTeams",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "MyTeams",
+  "start_url": "/",
+  "theme_color": "#238636",
+  "categories": [
+  ],
+  "icons": [
+    {
+      "src": "./assets/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "./assets/icons/icon-256x256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "./assets/icons/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "./assets/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+      
+    }
+    
+  ],
+  "iarc_rating_id": "E16+",
+  "display_override": [
+    "standalone"
+  ],
+  "splash_pages": null,
+  "shortcuts": [],
+  "lang": "pt"
+}

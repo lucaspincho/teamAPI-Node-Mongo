@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/main.css"> 
+
+  <!--PWA-->
+
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="msapplication-TileImage" content="./assets/favicon.png">
+  <meta name="msapplication-TileColor" content="#31506F">
+  <meta name="theme-color" content="#4D5360" />
+  <link rel="shortcut icon" sizes="192x192" href="./assets/favicon.png">
+  <link rel="shortcut icon" sizes="128x128" href="./assets/favicon.png">
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="PWA Teste">
+  <link rel="apple-touch-icon" href="./assets/favicon.png">
+ 
+  <link rel="apple-touch-icon" sizes="152x152" href="./assets/favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon.png">
+  <link rel="apple-touch-icon" sizes="167x167" href="./assets/favicon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="msapplication-starturl" content="/">
+
+  <link rel="manifest" href="./manifest.json">
+
+
+  <title>Lista de Times de Futebol</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="contentTitle">
+      <h1>Minha lista de times</h1>
+    </div>
+
+    <!-- <div class="listTeams"> -->
+      <ul id="containerListTeams" class="containerList">
+        <!-- <li class="teamItem">
+          <div class="imageTeam">
+            <img src="./assets/teams/team1.webp" alt="">
+          </div>
+
+          <div class="contentTeam">
+            <h1>Team title</h1>
+
+            <div class="informationTeam">
+              <span>Type</span>
+              <span>year team</span>
+            </div>
+
+          </div>
+        </li> -->
+
+
+      </ul>
+    <!-- </div> -->
+  </div>
+
+
+
+
+  <script src="./js/index.js"></script>
+
+  <script src="./service-worker.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('./service-worker.js').then(function (registration) {
+          console.log('ServiceWorker registration successful with scope: ', registration.scope);
+        }, function (err) {
+          console.log('ServiceWorker registration failed: ', err);
+        });
+      });
+    }
+  </script>
+</body>
+
+</html>

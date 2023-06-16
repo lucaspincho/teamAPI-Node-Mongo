@@ -1,0 +1,143 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Poppins:wght@300;400;600;700&family=Roboto:wght@100;300;500;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #81b39a;
+  font-family: 'Poppins';
+  overflow-x: hidden;
+}
+
+ul{
+  list-style:none;
+
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contentTitle{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  height: 20rem;
+}
+
+.containerList{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 10rem;
+  grid-column-gap: 5rem;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.teamItem{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #3c3e44;
+  border-radius: 15px;
+  height: 22rem;
+
+
+
+
+ 
+  margin-bottom: 10rem;
+}
+
+.contentTeam{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+  justify-content: center;
+  width: 35rem;
+  
+  color: #fff;
+}
+
+.contentTeam h1{
+  font-size: 25px;
+  text-align: center;
+  padding: 15px;
+}
+
+.imageTeam img{
+  width: 100%;
+}
+
+.informationTeam{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size:14px;
+}
+
+
+@media screen and (max-width:767px){
+
+  .imageTeam{
+    margin: 0;
+    padding:0;
+    width: 150%
+  }
+
+  .imageTeam img{
+    width: 70%;
+    margin: 0
+  }
+
+  .contentTitle{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .containerList{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    
+  }
+  
+  .teamItem{
+    height: 10rem;
+    width: 20rem
+  }
+
+  .contentTeam{
+    width: 20rem
+  }
+  .listTeams{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0
+  }
+
+  .contentTeam h1{
+    font-size: 15px;
+    text-align: center;
+    padding: 5px;
+  }
+}
